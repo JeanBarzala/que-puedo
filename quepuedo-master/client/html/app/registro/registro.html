@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {HEAD}
+        <link rel="stylesheet" type="text/css" lhref="client/css/index/style.css">
+        <script lsrc="client/js/plugins/bootstrap.min.js" ></script>
+        <script lsrc="client/js/index/main.js" type="text/javascript"></script>
+        <script lsrc="client/js/index/separator.js" type="text/javascript"></script>  
+    </head>
+    <body class="metro">
+        
+        {HEADER}
+
+        <div class="search-back">
+            <div class="search-back-layer">
+            </div>
+            <div class="search-form-content">
+                <img id="logo" lsrc="client/images/quepuedo.png" />
+            </div>
+         <div>
+    	 	<div class="select-type"><a href="#">Restaurant </a></div>
+    	 	<div class="select-type"><a href="#">Empresa / Organizacion</a></div>
+    	 </div>>
+        </div>
+        
+
+        <script>
+            $(document).on( 'ready', function(){
+                $('#myTab a').click(function ( e ) {
+                    e.preventDefault();
+                    $(this).tab('show');
+                });
+            });
+        </script>
+    </body>
+</html>

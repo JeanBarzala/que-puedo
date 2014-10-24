@@ -1,0 +1,558 @@
+<<<<<<< HEAD
+.block {
+	display: block !important;
+}
+
+/**************************************************************
+************************** SEARCH *****************************
+**************************************************************/
+.search-back {
+	background: #43A6DF;
+	height: 600px;
+	opacity: 1;
+	position: relative;
+	z-index: 0;
+}
+
+.search-back-layer {
+	background: #000;
+	height: 600px;
+	opacity: .6;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+#search-form {
+	color: #FFF;
+	margin: auto;
+	text-align: center;
+	width: 80%;
+}
+
+#logo {
+	display: block;
+	margin: 50px auto 10px;
+	max-height: 150px;
+}
+
+@media( max-width: 945px ) {
+	#logo {
+		max-height: 120px;
+	}
+}
+
+#search-form .form-control {
+	background: #FFF;
+	border-radius: 0;
+	display: inline-block;
+	color: #000;
+	font-family: 'Roboto Light', Arial, Georgia;
+	font-size: 18px;
+	height: 50px;
+	margin: .3em auto;
+	width: 60%;
+}
+
+#search-form a {
+	text-decoration: none;
+}
+
+#search-form a img {
+	max-height: 25px;
+}
+
+.metro-btn.btn-xlg {
+	margin-bottom: 4px;
+	padding: 11px 19px;
+}
+
+@media(max-width: 900px) {
+	#search-form {
+		width: 100%;
+	}
+
+	#search-form .form-control{
+		width: 70%;
+	}
+
+	.metro-btn.btn-xlg {
+		margin-bottom: 4px;
+		padding: 11px 8px;
+	}
+}
+
+#tab-filtro.nav.nav-tabs, 
+.tab-content {
+	margin: auto;
+	width: 60%;
+	text-align: center;
+}
+
+#tab-filtro.nav-tabs > li {
+	float: none;
+}
+
+#tab-filtro.nav > li {
+	display: inline-block;
+}
+
+#tab-filtro.nav-tabs > li > a {
+	background: #CCC;
+	color: #000;
+}
+
+#tab-filtro.nav-tabs > li > a:hover {
+	background: #FFF;
+	color: #555;
+}
+
+#tab-filtro.nav-tabs > li.active > a {
+	background: #FFF;
+	color: #555;
+}
+
+.tab-content {
+	background: #FFF;
+	height: 150px;
+}
+
+.tab-content .checkbox-container {
+	text-align: center;
+}
+
+.tab-content input[ type='checkbox' ] {
+	margin: 15px 5px 0 15px;
+	-ms-transform: scale(1.3); /* IE */
+	-moz-transform: scale(1.3); /* FF */
+	-webkit-transform: scale(1.3); /* Safari and Chrome */
+	-o-transform: scale(1.3); /* Opera */
+	transform: scale(1.3);
+}
+
+@media( max-width: 945px ) {
+	.tab-content {
+		height: auto;
+		padding-bottom: 25px;
+	}
+
+	.tab-content .checkbox-container {
+		display: inline-block;
+		margin: auto;
+		text-align: left;
+	}
+
+	.checkbox-container span {
+		display: block;
+		font-size: 14px;
+	}
+
+	.tab-content input[ type='checkbox' ] {
+		margin: 15px 10px;
+		-ms-transform: scale(2); /* IE */
+		-moz-transform: scale(2); /* FF */
+		-webkit-transform: scale(2); /* Safari and Chrome */
+		-o-transform: scale(2); /* Opera */
+		transform: scale(2);
+	}
+}
+
+/**************************************************************
+*********************** EVENTS PROMO **************************
+**************************************************************/
+#events-promo {
+	background: #FFFFFF;
+	/*border: 3px solid #EEE;
+	box-shadow: 0 0 50px rgba( 0, 0, 0, 1 );*/
+	display: block;
+	margin: -100px auto 0;
+	text-align: center;
+	width: 80%;
+	position: relative;
+}
+
+@media( max-width: 945px ) {
+	#events-promo {
+		margin-top: 0;
+		position: inherit;
+		display: block;
+	}
+}
+
+#events-promo .metro-tile .food-img {
+	width: 100%;
+}
+
+#events-promo .metro-tile .restaurant-img {
+	max-width: 50px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#events-promo .metro-tile .description-bg {
+	background: rgba( 0, 0, 0, .7 );
+	bottom: 0;
+	height: 40%;
+	position: absolute;
+	width: 100%;
+}
+
+#events-promo .metro-tile .description-name,
+#events-promo .metro-tile .description-price {
+	display: block;
+	font-size: 18px;
+}
+
+.metro-tile.double {
+	height: 150px;
+}
+
+/**************************************************************
+************* Cuanto Puedo CheckBox and controls  *************
+***************************************************************/
+
+input[type=checkbox].quepuedo-checkbox {
+	position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].quepuedo-checkbox + label.quepuedo-label {
+	padding-left: 25px;
+	height: 20px; 
+	display: inline-block;
+	line-height: 20px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 12pt;
+	vertical-align: middle;
+	cursor: pointer;
+	margin: 15px 10px;
+}
+input[type=checkbox].quepuedo-checkbox:checked + label.quepuedo-label {
+	background-position: 0 -20px;
+}
+label.quepuedo-label {
+	background-image:url(../../images/resources/quepuedo-checkbox.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;		
+}
+@media( max-width: 945px ) {
+
+	input[ type='checkbox' ] {
+		margin: 15px 10px;
+		-ms-transform: scale(2); /* IE */
+		-moz-transform: scale(2); /* FF */
+		-webkit-transform: scale(2); /* Safari and Chrome */
+		-o-transform: scale(2); /* Opera */
+		transform: scale(2);
+	}
+}
+.cuantopuedo {
+	display: inline-block;
+	width: 1.700em;
+	height: 1.850em;
+	line-height: 1.700em;
+	min-width: 1.700em;
+	font-weight: normal;
+	text-align: center;
+	text-shadow: 0 1px 0 white;
+	vertical-align: middle;
+	background-color: #eeeeee;
+	border: 1px solid #ccc;	
+}
+@media( max-width: 945px ) {
+
+	.cuantopuedo {
+		margin-right: -5px !important;
+	}
+}
+.cuantopuedo-input {
+	text-align: right;
+	display: inline-block;
+	margin-bottom: 0;
+	position: relative;
+	vertical-align: middle;
+	background-color: white;
+	border: 1px solid #cccccc;
+	font-size: 12pt;
+
+}
+.cuantopuedo-input:focus {
+	background: #FFF;
+	border: 1px solid #cccccc;
+	outline: 0;
+	color: #000;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6)
+}
+
+/**************************************************************
+************* Selccion de tipo de cuenta a crear  *************
+***************************************************************/
+.select-type {
+	background: #FFF;
+	height: 150px;
+	border-radius: 5px;
+	margin: auto;
+	width: 20%;
+	text-align: center;
+	vertical-align:middle;
+}
+@media( max-width: 945px ) {
+	.select-type {
+		height: auto;
+		padding-bottom: 25px;
+	}
+
+	.checkbox-container span {
+		display: block;
+		font-size: 14px;
+	}
+.block {
+	display: block !important;
+}
+
+/**************************************************************
+************************** SEARCH *****************************
+**************************************************************/
+.search-back {
+	background: #43A6DF;
+	height: 600px;
+	opacity: 1;
+	position: relative;
+	z-index: 0;
+}
+
+.search-back-layer {
+	background: #000;
+	height: 600px;
+	opacity: .6;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+}
+
+#search-form {
+	color: #FFF;
+	margin: auto;
+	text-align: center;
+	width: 80%;
+}
+
+#logo {
+	display: block;
+	margin: 50px auto 10px;
+	max-height: 150px;
+}
+
+@media( max-width: 945px ) {
+	#logo {
+		max-height: 120px;
+	}
+}
+
+#search-form .form-control {
+	background: #FFF;
+	border-radius: 0;
+	display: inline-block;
+	color: #000;
+	font-family: 'Roboto Light', Arial, Georgia;
+	font-size: 18px;
+	height: 50px;
+	margin: .3em auto;
+	width: 60%;
+}
+
+#search-form a {
+	text-decoration: none;
+}
+
+#search-form a img {
+	max-height: 25px;
+}
+
+.metro-btn.btn-xlg {
+	margin-bottom: 4px;
+	padding: 11px 19px;
+}
+
+@media(max-width: 900px) {
+	#search-form {
+		width: 100%;
+	}
+
+	#search-form .form-control{
+		width: 70%;
+	}
+
+	.metro-btn.btn-xlg {
+		margin-bottom: 4px;
+		padding: 11px 8px;
+	}
+}
+
+#tab-filtro.nav.nav-tabs, 
+.tab-content {
+	margin: auto;
+	width: 60%;
+	text-align: center;
+}
+
+#tab-filtro.nav-tabs > li {
+	float: none;
+}
+
+#tab-filtro.nav > li {
+	display: inline-block;
+}
+
+#tab-filtro.nav-tabs > li > a {
+	background: #CCC;
+	color: #000;
+}
+
+#tab-filtro.nav-tabs > li > a:hover {
+	background: #FFF;
+	color: #555;
+}
+
+#tab-filtro.nav-tabs > li.active > a {
+	background: #FFF;
+	color: #555;
+}
+
+.tab-content {
+	background: #FFF;
+	height: 150px;
+}
+
+.tab-content .checkbox-container {
+	text-align: center;
+}
+
+.tab-content input[ type='checkbox' ] {
+	margin: 15px 5px 0 15px;
+	-ms-transform: scale(1.3); /* IE */
+	-moz-transform: scale(1.3); /* FF */
+	-webkit-transform: scale(1.3); /* Safari and Chrome */
+	-o-transform: scale(1.3); /* Opera */
+	transform: scale(1.3);
+}
+.tab-content input[ type='checkbox' ].css-checkbox {
+	position:absolute; 
+	z-index:-1000; left:-1000px; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0; 
+	border:0;
+}
+.tab-content input[ type='checkbox' ].css-checkbox + span.css-span{
+	padding-left:25px;
+	height:20px; 
+	display:inline-block;
+	line-height:20px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:20px;
+	vertical-align:middle;
+	cursor:pointer;
+
+}
+
+.tab-content input[ type='checkbox' ].css-checkbox:checked + span.css-span{
+	background-position: 0 -20px;
+}
+span.css-span{
+		background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_4392a694a7b0efa5cc887865c64d6329.png);
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+}
+
+@media( max-width: 945px ) {
+	.tab-content {
+		height: auto;
+		padding-bottom: 25px;
+	}
+
+	.tab-content .checkbox-container {
+		display: inline-block;
+		margin: auto;
+		text-align: left;
+	}
+
+	.checkbox-container span {
+		display: block;
+		font-size: 14px;
+		}
+
+	.tab-content input[ type='checkbox' ] {
+		margin: 15px 10px;
+		-ms-transform: scale(2); /* IE */
+		-moz-transform: scale(2); /* FF */
+		-webkit-transform: scale(2); /* Safari and Chrome */
+		-o-transform: scale(2); /* Opera */
+		transform: scale(2);
+	}
+}
+
+/**************************************************************
+*********************** EVENTS PROMO **************************
+**************************************************************/
+#events-promo {
+	background: #FFFFFF;
+	/*border: 3px solid #EEE;
+	box-shadow: 0 0 50px rgba( 0, 0, 0, 1 );*/
+	display: block;
+	margin: -100px auto 0;
+	text-align: center;
+	width: 80%;
+	position: relative;
+}
+
+@media( max-width: 945px ) {
+	#events-promo {
+		margin-top: 0;
+		position: inherit;
+		display: block;
+	}
+}
+
+#events-promo .metro-tile .food-img {
+	width: 100%;
+}
+
+#events-promo .metro-tile .restaurant-img {
+	max-width: 50px;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#events-promo .metro-tile .description-bg {
+	background: rgba( 0, 0, 0, .7 );
+	bottom: 0;
+	height: 40%;
+	position: absolute;
+	width: 100%;
+}
+
+#events-promo .metro-tile .description-name,
+#events-promo .metro-tile .description-price {
+	display: block;
+	font-size: 18px;
+}
+
+.metro-tile.double {
+	height: 150px;
+}

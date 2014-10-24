@@ -1,0 +1,210 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+    <head>
+        {HEAD}
+        <link rel="stylesheet" type="text/css" lhref="client/css/index/style.css">
+        <script lsrc="client/js/plugins/bootstrap.min.js" ></script>
+        <script lsrc="client/js/index/main.js" type="text/javascript"></script>
+        <script lsrc="client/js/index/separator.js" type="text/javascript"></script>  
+    </head>
+    <body class="metro">
+        
+        {HEADER}
+
+        <div class="search-back">
+            <div class="search-back-layer">
+            </div>
+            <div class="search-form-content">
+                <img id="logo" lsrc="client/images/quepuedo.png" />
+                <form id="search-form">
+                    <input type="text" class="form-control" placeholder="Comidas, Eventos, Precio, Ciudad" />
+                    <a class="metro-btn btn-primary btn-xlg">
+                        Buscar
+                        <img lsrc="client/images/logo2.png" alt="Buscar" />
+                    </a>
+                </form>
+
+                <!-- Nav tabs -->
+                <ul id="tab-filtro" class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                        <a href="#events" role="tab" data-toggle="tab">Eventos</a>
+                    </li>
+                    <li>
+                        <a href="#para-comer" role="tab" data-toggle="tab">Para comer</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="events">
+                        <br />
+                        <label>Que puedo con <input type="number" class="cuantopuedo-input" data-type="integer" placeholder="20.000" onkeyup = "quepuedoSeparar(this,this.value.charAt(this.value.length-1))"/><span class="cuantopuedo">Gs</span>
+                        </label>
+                        <br />
+                        
+                        <div class="checkbox-container">
+                           <input type="checkbox" name="arteyespec" id="arteyespec" class="quepuedo-checkbox" /><label for="arteyespec" class="quepuedo-label">Arte y espect&aacute;culo</label>
+                           <input type="checkbox" name="deport" id="deport" class="quepuedo-checkbox" /><label for="deport" class="quepuedo-label">Deportes</label>
+                           <input type="checkbox" name="educ" id="educ" class="quepuedo-checkbox" /><label for="educ" class="quepuedo-label">Educaci&oacute;n</label>
+                           <input type="checkbox" name="tec" id="tec" class="quepuedo-checkbox" /><label for="tec" class="quepuedo-label">Tecnolog&iacute;a</label>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="para-comer">
+                        <br />
+                        <label>Que puedo con <input type="number" class="cuantopuedo-input" data-type="integer" placeholder="20.000" onkeyup = "quepuedoSeparar(this,this.value.charAt(this.value.length-1))"/><span class="cuantopuedo">Gs</span>
+                        </label>
+                        <br />
+                        
+                        <div class="checkbox-container">
+                            <input type="checkbox" name="fastfood" id="fastfood" class="quepuedo-checkbox" /><label for="fastfood" class="quepuedo-label">Fast Food</label>
+                           <input type="checkbox" name="dulces" id="dulces" class="quepuedo-checkbox" /><label for="dulces" class="quepuedo-label">Dulces</label>
+                           <input type="checkbox" name="bebidas" id="bebidas" class="quepuedo-checkbox" /><label for="bebidas" class="quepuedo-label">Bebidas</label>
+                           <input type="checkbox" name="gourmet" id="gourmet" class="quepuedo-checkbox" /><label for="gourmet" class="quepuedo-label">Gourmet</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <section class="container" id="events-promo">
+            <div id="tile-container" class="metro-tile-group">
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue">
+                    <img class="food-img" lsrc="client/images/comidas/honolulu_pizza_chica_243832.jpg" alt="">
+                    <img class="restaurant-img" lsrc="client/images/restaurants/honolulu.jpg" alt="Honolulu" />
+                    <div class="description-bg">
+                        <span class="description-name">Pizza Chica</span>
+                        <span class="description-price">15000</span>
+                    </div>
+                </div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+            </div>
+            
+        </section>
+
+        <script>
+            $(document).on( 'ready', function(){
+                $('#myTab a').click(function ( e ) {
+                    e.preventDefault();
+                    $(this).tab('show');
+                });
+            });
+        </script>
+    </body>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        {HEAD}
+        <link rel="stylesheet" type="text/css" lhref="client/css/index/style.css">
+        <script lsrc="client/js/plugins/bootstrap.min.js" ></script>
+        <script lsrc="client/js/index/main.js" type="text/javascript"></script> 
+    </head>
+    <body class="metro">
+        
+        {HEADER}
+
+        <div class="search-back">
+            <div class="search-back-layer">
+            </div>
+            <div class="search-form-content">
+                <img id="logo" lsrc="client/images/quepuedo.png" />
+                <form id="search-form">
+                    <input type="text" class="form-control" placeholder="Comidas, Eventos, Precio, Ciudad" />
+                    <a class="metro-btn btn-primary btn-xlg">
+                        Buscar
+                        <img lsrc="client/images/logo2.png" alt="Buscar" />
+                    </a>
+                </form>
+
+                <!-- Nav tabs -->
+                <ul id="tab-filtro" class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                        <a href="#events" role="tab" data-toggle="tab">Eventos</a>
+                    </li>
+                    <li>
+                        <a href="#para-comer" role="tab" data-toggle="tab">Para comer</a>
+                    </li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="events">
+                        <br />
+                        <label>Que puedo con <input type="number" /></label>
+                        <br />
+                        
+                        <div class="checkbox-container">
+                        <input type="checkbox" name="checkboxG4" id="checkboxG4" class="css-checkbox" /><label for="checkboxG4" class="css-label">Option 1</label>
+                            <span><input type="checkbox" />Arte y espectaculo</span>
+                            <span><input type="checkbox" />Deportes</span>
+                            <span><input type="checkbox" />Educación</span>
+                            <span><input type="checkbox" />Negocios</span>
+                            <span><input type="checkbox" />Tecnologia</span>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="para-comer">
+                        <br />
+                        <label>Que puedo con <input type="number" /></label>
+                        <br />
+                        
+                        <div class="checkbox-container">
+                            <span><input type="checkbox"/>Fast Food</span>
+                            <span><input type="checkbox" />Dulces</span>
+                            <span><input type="checkbox" />Bebidas</span>
+                            <span><input type="checkbox" />Gourmet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <section class="container" id="events-promo">
+            <div id="tile-container" class="metro-tile-group eight">
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue">
+                    <img class="food-img" lsrc="client/images/comidas/honolulu_pizza_chica_243832.jpg" alt="">
+                    <img class="restaurant-img" lsrc="client/images/restaurants/honolulu.jpg" alt="Honolulu" />
+                    <div class="description-bg">
+                        <span class="description-name">Pizza Chica</span>
+                        <span class="description-price">15000</span>
+                    </div>
+                </div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+                <div class="metro-tile double metro-bg-black metro-ol-hover-darkBlue"></div>               
+            </div>
+            
+        </section>
+
+        <script>
+            $(document).on( 'ready', function(){
+                $('#myTab a').click(function ( e ) {
+                    e.preventDefault();
+                    $(this).tab('show');
+                });
+            });
+        </script>
+
+    </body>
+>>>>>>> e8478b0143f76fe086bcb99c853b6b0d5ac212af
+</html>
